@@ -1,4 +1,4 @@
-name: ci-build-golang-workflow
+name: telegraf-kafka-mqtt:-workflow
 on:
   push:
     branches:
@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: rogeriocassares/telegraf-kafka-mqtt:0.1.12
+          tags: rogeriocassares/telegraf-kafka-mqtt:0.2
