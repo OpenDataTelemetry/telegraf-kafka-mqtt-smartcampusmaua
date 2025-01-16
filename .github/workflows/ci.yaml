@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: rogeriocassares/telegraf-kafka-mqtt:0.3
+          tags: rogeriocassares/telegraf-kafka-mqtt:0.4
