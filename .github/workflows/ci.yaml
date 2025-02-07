@@ -1,14 +1,14 @@
-name: telegraf-kafka-mqtt:-workflow
+name: telegraf-kafka-influxdb-workflow
 on:
   push:
     branches:
       - develop
 jobs:
   check-application:
+    name: build-job
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-go@v4
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: rogeriocassares/telegraf-kafka-mqtt:0.4
+          tags: smartcampusmaua/telegraf-kafka-mqtt:0.4
